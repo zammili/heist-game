@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GILDED — The Meridian Gallery Heist</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #07080f;
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+  #wrap {
+    position: relative;
+    width: 1280px;
+    height: 480px;
+  }
+  canvas {
+    display: block;
+    width: 1280px;
+    height: 480px;
+    background: #141828;
+  }
+  #selftest {
+    position: absolute;
+    left: 0;
+    bottom: -22px;
+    width: 1280px;
+    color: #9aa3b8;
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  #hint {
+    position: absolute;
+    left: 0;
+    bottom: -22px;
+    width: 1280px;
+    color: #5a6278;
+    font-size: 11px;
+    text-align: right;
+  }
+</style>
+</head>
+<body>
+  <div id="wrap">
+    <canvas id="game" width="1280" height="480"></canvas>
+    <div id="selftest"></div>
+    <div id="hint">GILDED — WASD move · Shift sneak · click tosses a coin · M mute</div>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
